@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will I pass?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-header">
+        <div class="content-grading-system ">
+            <h1>Will I pass?</h1>
+            <h2>First, we will need some info about your grading system</label>
+            <label class="grading1Input"><input maxlength="3" placeholder="Written Works"></label>
+            <label class="grading2Input"><input maxlength="3" placeholder="Performance Tasks"></label>
+            <label class="grading3Input"><input maxlength="3" placeholder="Quarterly Assessment"></label>
+            <button class="btn submit-grading-system" onclick="startProgram()">Submit</button>
+        </div>
+        <div class="content-main-data hidden">
+            <div class="list-data">
+                <div class="written-works-data">
+                    <h4>Written Works</h4>
+                    <div class="written-work">
+                        <input maxlength="3" class="writtenInput score" placeholder="Score">
+                        <input maxlength="3" class="writtenInput overall" placeholder="Overall">
+                    </div>
+                    <div class="main-buttons">
+                        <button onclick="createInput(this)">Add</button>
+                        <button onclick="deleteInput(this)">Delete</button>
+                    </div>
+                </div>
+                <div class="performance-tasks-data">
+                    <h4>Performance Tasks</h4>
+                    <div class="performance-task">
+                        <input maxlength="3" class="performanceInput score" placeholder="Score">
+                        <input maxlength="3" class="performanceInput overall" placeholder="Overall">
+                    </div>
+                    <div class="main-buttons">
+                        <button onclick="createInput(this)">Add</button>
+                        <button onclick="deleteInput(this)">Delete</button>
+                    </div>
+                </div>
+                <div class="quarterly-assessment-data">
+                    <h4>Quarterly Assessments</h4>
+                    <div class="quarterly-assessment">
+                        <input maxlength="3" class="quarterlyInput score" placeholder="Score">
+                        <input maxlength="3" class="quarterlyInput overall" placeholder="Overall">
+                    </div>
+                    <div class="main-buttons">
+                        <button onclick="createInput(this)">Add</button>
+                        <button onclick="deleteInput(this)">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn submit-main-data" onclick="submitData()">Submit</button>
+            <button onclick="calculateAgain()" class="btn Back">Back? (Restarts Tables)</button>
+            
+        </div>
+        <div class="content-results hidden">
+            <h3>Your Grade is:</h3>
+            <h4 class="final-grade"></h5>
+            <h5 class="remarks"></h3>
+            <button onclick="calculateAgain()" class="btn Back">Calculate Again?</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

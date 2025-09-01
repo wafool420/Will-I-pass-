@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*/
+
+/*Grading System*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.content-grading-system {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 2% 2% 2%;
+  width: 30%;
+  border-radius: 5%;
+}
+
+.content-grading-system h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.content-grading-system h1 {
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 30px;
+}
+
+.content-grading-system h2 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.content-grading-system label,
+button {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.content-grading-system input {
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.content-grading-system button {
+  background: linear-gradient(180deg, #4facfe 0%, #3584fc 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 12%;
+  margin-top: 30px;
+  outline: none;
+}
+
+.content-grading-system button:hover {
+  animation: buttonHover 0.5s ease forwards;
+}
+
+/*Main Page*/
+
+.content-main-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-main-data {
+  background: linear-gradient(180deg, #4facfe 0%, #3584fc 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 12%;
+  margin-top: 30px;
+  outline: none;
+}
+
+.submit-main-data:hover {
+  animation: buttonHover 0.5s ease forwards;
+}
+
+.list-data {
+  display: flex;
+  gap: 50px;
+}
+
+.list-data > div {
+  background-color: white;
+  padding: 5vh 4vh 3vh 4vh;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.list-data > div > div:not(.main-buttons) {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.list-data button {
+  font-size: 25px;
+  outline: 0;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.list-data button:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.list-data input {
+  font-size: 20px;
+  outline: 0;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Content Results */
+
+.content-results {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content-results h3 {
+  margin: 10px;
+}
+
+.content-results h5 {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.Back {
+  background: linear-gradient(180deg, #4facfe 0%, #3584fc 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12%;
+  outline: none;
+}
+
+.Back:hover {
+  animation: buttonHover 0.5s ease forwards;
+}
+
+/*Extras*/
+
+.hidden {
+  display: none;
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1500px) {
+  .content-grading-system {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 1% 2% 2%;
+    width: 60%;
+    border-radius: 5%;
+    margin-top: 10%;
+  }
+
+  .content-grading-system h1 {
+    font-size: 40px;
+  }
+
+  .list-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10%;
+  }
+
+  .list-data > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+    width: 300px;
+    height: auto;
+  }
+
+  .content-results {
+    width: 250px;
+    font-size: 30px;
+    margin-top: 10%;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .content-grading-system {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 1% 2% 2%;
+    width: 80%;
+    border-radius: 5%;
+    margin-top: 20%;
+  }
+
+  .content-grading-system h1 {
+    font-size: 40px;
+  }
+
+  .content-grading-system h2 {
+    font-size: 15px;
+  }
+
+  .list-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20%;
+  }
+
+  .list-data > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+    width: 300px;
+    height: auto;
+  }
+
+  .content-results {
+    width: 250px;
+    font-size: 25px;
+    margin-top: 10%;
+  }
+  
+  .final-grade {
+    
+    font-size: 60px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+
+/* Old css :/ */
+
+/*
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh; 
+}
+
+body {
+  background: #82e8ff;
+  background: linear-gradient(
+    180deg,
+    rgba(130, 232, 255, 1) 0%,
+    rgba(0, 86, 156, 1) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  font-size: 15vh; 
+  margin-bottom: 0;
+  text-shadow: 1px 3px 7px #000000;
+}
+
+.content-grading-system h2 {
+  color: white;
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: 1px 3px 3px #000000;
+}
+
+.content-grading-system label {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vh;
+  margin-top: 30px;
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.submit-grading-system {
+  font-size: 30px;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(229, 255, 0) 0%,
+    rgb(173, 142, 0) 100%
+  );
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.submit-grading-system:hover {
+  animation: myAnim 0.5s ease forwards;
+}
+
+.content-main-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-data {
+  display: flex;
+  margin: 5px;
+}
+
+
+.list-data > div {
+  border: 1px solid;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  margin-top: 10px;
+  background-color: rgb(172, 132, 80);
+}
+
+.list-data div h4 {
+  color: white;
+  text-shadow: 1px 3px 3px #000000;
+}
+
+.written-work,
+.performance-task,
+.quarterly-assessment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.written-works-data h4,
+.performance-tasks-data h4,
+.quarterly-assessment-data h4 {
+  min-height: 72px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.list-data .main-buttons button {
+  font-size: 20px;
+}
+
+.submit-main-data {
+  font-size: 30px;
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(229, 255, 0) 0%,
+    rgb(173, 142, 0) 100%
+  );
+  margin: 20 auto;
+  padding: 10px;
+}
+
+.submit-main-data:hover {
+  animation: myAnim 0.5s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-results {
+  border: 1px solid;
+  background-color: rgb(172, 132, 80);
+  padding: 30px;
+}
+
+.content-results h3 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.content-results h4 {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.content-results h5 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 10vh;
+  }
+
+  .list-data {
+    display: flex;
+    flex-direction: column;
+  }
+}
